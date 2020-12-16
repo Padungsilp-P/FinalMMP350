@@ -46,14 +46,20 @@ function createPost(postData, userInfo, postId) {
 	// if you want posts in chronological, display it this way:
 	// 
 	
-    const img = js.createEl('div', 'accimg', "img");
-	const text = js.createEl('h2', 'textcontent', postData.text);
+    const img = js.createEl('img', 'accimg');
+    if (userInfo.imageURL) {
+		img.src = userInfo.imageURL;
+	}
+    else{
+        img.src = "img/default.png";
+    }
+	const text = js.createEl('p', 'textcontent', postData.text);
 	const info = js.createEl('div', 'info');
-	const author = js.createEl('h2', 'info', "by " + userInfo.displayName);
+	const author = js.createEl('h3', 'infoname', "by " + userInfo.displayName);
 	const d = new Date(postData.date);
 	const realDate = js.formatDate(d)
 	// (d.getMonth()+1) + '/' + d.getDate() +'/'+ d.getFullYear();
-	const date = js.createEl('h2', 'date', " on " + realDate);
+	const date = js.createEl('h3', 'date', " on " + realDate);
 
 	info.appendChild(author);
 	info.appendChild(date);
