@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Information</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAa3iyYs8wCBUKP1q1ibMYCXVMk3SykACQ",
+    authDomain: "mmp-350-project.firebaseapp.com",
+    databaseURL: "https://mmp-350-project.firebaseio.com",
+    projectId: "mmp-350-project",
+    storageBucket: "mmp-350-project.appspot.com",
+    messagingSenderId: "1002351863329",
+    appId: "1:1002351863329:web:9f7fb994007d1dbcb16560",
+    measurementId: "G-J7E2JKH2TY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <h1 class="loginheader">Amoung Us Shelter</h1>
+        <div id="form">
+            <div class="text">
+                <h2>Account information</h2>
+                <h3>UserName: <input type="text" id="username" placeholder="username"></h3>
+            </div>
+            <button id="update">Update</button><button id="logout" onclick="document.location='login.html'">Logout</button>
+        </div>
+        <div><a href="blog.html" id="gobacktext">Go back to Blog page</a></div>
+        <script src="js/update.js"></script>
+        <script src="js/helpers.js"></script>
+    </body>
+</html>
