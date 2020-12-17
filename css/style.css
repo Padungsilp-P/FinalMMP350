@@ -6,9 +6,6 @@ a{
     text-decoration-line: none;
     color: black;
 }
-.infoname, .date{
-    font-family: 'Press Start 2P', cursive;
-}
 @media(min-width: 426px){
     h1{
         font-size: 2.8vh;
@@ -18,6 +15,9 @@ a{
     }
     h3{
         font-size: 1.5vh;
+    }
+    h4{
+        font-size: 1vh;
     }
     p{
         font-size: 1.5vh;
@@ -29,18 +29,12 @@ a{
         background-repeat: repeat;
         padding: 0.2vh;
         width: 80%;
-        min-width: 1000px;
+        min-width: 768px;
     }
     #menupage{
         display: grid;
         grid-template-columns: 1fr 7fr;
-        grid-template-rows: 20vh 1fr 6vh;
         grid-gap: 0.2vh;
-    }
-    .header{
-        grid-column: 1/ span 2;
-        background: white;
-        text-align: center;
     }
     .menu{
         padding: 0.5vh;
@@ -51,11 +45,6 @@ a{
         padding: 0.5vh;
         background: pink;
     }
-    .footer{
-        text-align: center;
-        grid-column: 1/ span 2;
-        background: yellow;
-    }
     button, input{
         font-size: 1.6vh;
         height: auto;
@@ -63,26 +52,16 @@ a{
     #firstpage{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 32vh 1fr;
         text-align: center;
         grid-gap: 0.2vh;
-    }
-    .imgfirstpage{
-        grid-column: 1/ span 2;
-        background: white;
-    }
-    .btfirstpage1{
-        background: red;
-    }
-    .btfirstpage2{
-        background: green;
     }
     #form{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 5vh;
         grid-gap: 0.2vh;
-        background: brown;
+        width: 40vh;
+        margin: 0 auto;
+        
     }
     .loginheader{
         font-size: 4vh;
@@ -90,37 +69,22 @@ a{
         padding: 1vh;
         color: white;
     }
-    .text{
-        grid-column: span 2;
-    }
+    
     #blogpage{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20vh 6vh 1fr 25vh 6vh;
         grid-gap: 0.2vh;
-    }
-    .headerblog{
-        background: white;
     }
     .comment{
         padding: 1vh;
         background: pink;
-    }
-    .footerblog{
-        text-align: center;
-        background: yellow;
     }
     #textcomment{
         width: 100%;
         height: 13vh;
         font-size: 1.5vh;
     }
-    #gobacktext{
-        color: red;
-        grid-column: span 2;
-    }
     #posts{
-        background: green;
+        background: blue;
         padding: 1vh;
     }
     .post{
@@ -128,29 +92,11 @@ a{
         grid-template-columns: 10vh 1fr;
         grid-template-rows: 10vh 1fr;
     }
-    .accimg{
-        background: white;
-    }
-    .info{
-        background: brown;
-    }
+
     .textcontent{
         grid-column: span 2;
-        background: blue;
+        background: white;
         padding: 1vh
-    }
-    .new{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20vh 1fr;
-        grid-gap: 0.2vh;
-        background: pink;
-    }
-    .topic{
-        background: hotpink;
-    }
-    .news{
-        grid-column: span 2;
     }
     #profile-image{
         width:20vh;
@@ -174,6 +120,9 @@ a{
     h3{
         font-size: 4.5vw;
     }
+    h4{
+        font-size: 2.5vw;
+    }
     p{
         font-size: 4.5vw;
     }
@@ -187,14 +136,9 @@ a{
     #menupage{
         display: grid;
         grid-template-columns: 0.8fr 2.2fr;
-        grid-template-rows: 20vw 1fr 14vw;
         grid-gap: 0.2vw;
     }
-    .header{
-        grid-column: 1/ span 2;
-        background: white;
-        text-align: center;
-    }
+    
     .menu{
         padding: 0.5vw;
         text-align: center;
@@ -204,11 +148,6 @@ a{
         padding: 0.5vw;
         background: pink;
     }
-    .footer{
-        text-align: center;
-        grid-column: 1/ span 2;
-        background: yellow;
-    }
     button, input{
         font-size: 4vw;
         height: auto;
@@ -216,26 +155,13 @@ a{
     #firstpage{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 32vw 1fr;
         text-align: center;
         grid-gap: 0.2vw;
-    }
-    .imgfirstpage{
-        grid-column: 1/ span 2;
-        background: white;
-    }
-    .btfirstpage1{
-        background: red;
-    }
-    .btfirstpage2{
-        background: green;
     }
     #form{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 8vw;
         grid-gap: 0.2vw;
-        background: brown;
     }
     .loginheader{
         font-size: 9vw;
@@ -245,35 +171,23 @@ a{
     }
     .text{
         grid-column: span 2;
+        background: brown;
     }
     #blogpage{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20vw 14vw 1fr 60vw 14vw;
         grid-gap: 0.2vw;
-    }
-    .headerblog{
-        background: white;
     }
     .comment{
         padding: 1vw;
         background: pink;
-    }
-    .footerblog{
-        text-align: center;
-        background: yellow;
     }
     #textcomment{
         width: 100%;
         height: 30vw;
         font-size: 4vw;
     }
-    #gobacktext{
-        color: red;
-        grid-column: span 2;
-    }
     #posts{
-        background: green;
+        background: blue;
         padding: 1vw;
     }
     .post{
@@ -281,29 +195,10 @@ a{
         grid-template-columns: 25vw 1fr;
         grid-template-rows: 25vw 1fr;
     }
-    .accimg{
-        background: white;
-    }
-    .info{
-        background: brown;
-    }
     .textcontent{
         grid-column: span 2;
-        background: blue;
+        background: white;
         padding: 1vw;
-    }
-    .new{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20vw 1fr;
-        grid-gap: 0.2vw;
-        background: pink;
-    }
-    .topic{
-        background: hotpink;
-    }
-    .news{
-        grid-column: span 2;
     }
     #profile-image{
         width:40vw;
@@ -315,4 +210,50 @@ a{
         width:23vw;
         height:23vw;
     }
+}
+.infoname, .date{
+    font-family: 'Press Start 2P', cursive;
+}
+.header{
+     grid-column: 1/ span 2;
+     background: white;
+     text-align: center;
+     width: 100%;
+}
+.imgfirstpage{
+    grid-column: 1/ span 2;
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+}
+.headerblog{
+    background: white;
+    width: 100%;
+}
+.info{
+    background: green;
+}
+.btfirstpage1{
+    background: red;
+}
+.btfirstpage2{
+    background: green;
+}
+.footer{
+     text-align: center;
+     grid-column: 1/ span 2;
+     background: yellow;
+}
+.text{
+     background: brown;
+     grid-column: span 2;
+}
+.footerblog{
+    text-align: center;
+    background: yellow;
+}
+#gobacktext{
+    color: red;
+    grid-column: span 2;
+    background: black;
 }

@@ -53,13 +53,13 @@ function createPost(postData, userInfo, postId) {
     else{
         img.src = "img/default.png";
     }
-	const text = js.createEl('p', 'textcontent', postData.text);
+	const text = js.createEl('p', 'textcontent', ">>> "+postData.text);
 	const info = js.createEl('div', 'info');
-	const author = js.createEl('h3', 'infoname', "by " + userInfo.displayName);
+	const author = js.createEl('h4', 'infoname', "Username: " + userInfo.displayName);
 	const d = new Date(postData.date);
 	const realDate = js.formatDate(d)
 	// (d.getMonth()+1) + '/' + d.getDate() +'/'+ d.getFullYear();
-	const date = js.createEl('h3', 'date', " on " + realDate);
+	const date = js.createEl('h4', 'date', "Date: " + realDate);
 
 	info.appendChild(author);
 	info.appendChild(date);
