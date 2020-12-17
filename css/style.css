@@ -18,18 +18,18 @@ a{
     }
     h4{
         font-size: 1vh;
+        font-family: 'Press Start 2P', cursive;
     }
     p{
         font-size: 1.5vh;
     }
     body{
         margin: 0 auto;
-        background-image: url("img/black-background-star.jpg");
         background: black;
-        background-repeat: repeat;
+        background-image: url('/img/black-background-star.jpg');
         padding: 0.2vh;
         width: 80%;
-        min-width: 768px;
+        min-width: 700px;
     }
     #menupage{
         display: grid;
@@ -122,15 +122,15 @@ a{
     }
     h4{
         font-size: 2.5vw;
+        font-family: 'Press Start 2P', cursive;
     }
     p{
         font-size: 4.5vw;
     }
     body{
         margin: 0 auto;
-        background-image: url("img/black-background-star.jpg");
         background: black;
-        background-repeat: repeat;
+        background-image: url('/img/black-background-star.jpg');
         padding: 0.2vw;
     }
     #menupage{
@@ -211,9 +211,6 @@ a{
         height:23vw;
     }
 }
-.infoname, .date{
-    font-family: 'Press Start 2P', cursive;
-}
 .header{
      grid-column: 1/ span 2;
      background: white;
@@ -256,4 +253,16 @@ a{
     color: red;
     grid-column: span 2;
     background: black;
+}
+.detail{
+    background: orange;
+    width: 95%;
+}
+.news{
+    background: orange;
+    width: 95%;
+    padding: 2%;
+}
+.center0{
+    text-align: center;
 }
