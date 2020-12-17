@@ -76,7 +76,7 @@ a{
     }
     .comment{
         padding: 1vh;
-        background: pink;
+        background: hotpink;
     }
     #textcomment{
         width: 100%;
@@ -179,7 +179,7 @@ a{
     }
     .comment{
         padding: 1vw;
-        background: pink;
+        background: hotpink;
     }
     #textcomment{
         width: 100%;
@@ -219,8 +219,9 @@ a{
 }
 .imgfirstpage{
     grid-column: 1/ span 2;
-    background: white;
-    width: 100%;
+    background: blueviolet;
+    padding: 1%;
+    width: 98%;
     margin: 0 auto;
 }
 .headerblog{
@@ -228,7 +229,7 @@ a{
     width: 100%;
 }
 .info{
-    background: green;
+    background: limegreen;
 }
 .btfirstpage1{
     background: red;
@@ -242,26 +243,21 @@ a{
      background: yellow;
 }
 .text{
-     background: brown;
+     background: saddlebrown;
      grid-column: span 2;
 }
 .footerblog{
     text-align: center;
-    background: yellow;
+    background: lightgreen;
 }
 #gobacktext{
-    color: red;
+    color: cyan;
     grid-column: span 2;
     background: black;
 }
 .detail{
     background: orange;
-    width: 95%;
-}
-.news{
-    background: orange;
-    width: 95%;
-    padding: 2%;
+    width: 100%;
 }
 .center0{
     text-align: center;
