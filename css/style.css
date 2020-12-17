@@ -262,4 +262,5 @@ a{
 .center0, .twitter-timeline{
     text-align: center;
     margin: 0 auto;
+    align-items: center;
 }
