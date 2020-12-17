@@ -259,9 +259,7 @@ a{
     background: orange;
     width: 100%;
 }
-.center0{
+.center0, .twitter-timeline{
     text-align: center;
-}
-.twitter-timeline{
-    align-items: center;
+    margin: 0 auto;
 }
